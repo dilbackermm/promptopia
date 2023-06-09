@@ -8,10 +8,19 @@ export const metadata = {
 }
 
 
-const layout = () => {
+const RootLayout = ({ children }) => {
   return (
-    <div>layout</div>
+   <html lang='en'>
+<body>
+  <div className="main">
+    <div className="gradient" />
+  </div>
+  <main className="app">
+    {children}
+  </main>
+</body>
+   </html>
   )
 }
 
-export default layout
+export default RootLayout
